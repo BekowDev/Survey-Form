@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Here you can enter your information to win a prize.</p>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Number:</label>
+            <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+
+            <label for="dropdown">Select an option:</label>
+            <select id="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+            <fieldset>
+                <legend>Select an option:</legend>
+                <div>
+                    <input type="radio" id="radio1" name="radioGroup" value="radioOption1">
+                    <label for="radio1">Option 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio2" name="radioGroup" value="radioOption2">
+                    <label for="radio2">Option 2</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select one or more options:</legend>
+                <div>
+                    <input type="checkbox" id="checkbox1" value="checkboxOption1">
+                    <label for="checkbox1">Option 1</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="checkbox2" value="checkboxOption2">
+                    <label for="checkbox2">Option 2</label>
+                </div>
+            </fieldset>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
